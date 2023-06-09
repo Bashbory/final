@@ -32,4 +32,31 @@
 
     @apply max-sm:h-[200px] max-sm:text-center max-sm:ml-auto max-sm:mr-auto;
 } */
+@keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (6*300px)));
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container .carousel-items {
+      animation: carouselAnim 60s infinite alternate linear;
+    }
+    @keyframes carouselAnim {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(calc(-100% + (5*300px)));
+      }
+    }
+  }
+  
+  .carousel-focus:hover {
+    transition: all 0.8s;
+    transform: scale(1.1);
+  }
 
