@@ -60,3 +60,28 @@
     transform: scale(1.1);
   }
 
+  .plat{
+    @apply pt-[200px] bg-gradient-to-br from-orange-600 to-orange-500    max-md:text-center
+  }
+
+  .gold{
+
+    @apply  font-maven font-bold text-6xl pl-8 max-sm:pl-0 
+  }
+
+  .silver{
+
+    @apply uppercase tracking-[4px] text-xl text-white pl-8 max-sm:pl-0 pt-8
+
+  }
+  .bronze{
+
+    @apply  pt-[20px] pl-8 text-lg font-thin font-maven  max-sm:pt-0 max-sm:pb-[20px] max-md:max-w-screen-md max-sm:pl-0
+  }
+
+  .noo{
+
+ @apply pb-[30px]  pl-8 text-lg  font-maven text-white max-sm:pt-0 max-sm:pb-[20px] max-md:max-w-screen-md max-sm:pl-0
+
+  }
+
